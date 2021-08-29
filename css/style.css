@@ -2,6 +2,8 @@
     box-sizing: border-box;
     width: 100%;
     color: white;
+    scroll-behavior: smooth;
+    font-family: 'Quicksand', sans-serif;
 }
 body{
     background-image: url("/portfolioBg.jpg");
@@ -9,13 +11,13 @@ body{
     background-size:cover;
     background-position: center;
     background-attachment: fixed;
-    font-size: large;
+    font-size: 65%;
     margin: 0;
 }
 .body-container{
-    width: 70vw;
-    height: 80vh;
-    margin: 5vh 15vw 6vh;
+    width: 65vw;
+    height: fit-content;
+    margin: 5vh 17.5vw 6vh;
     background-color: whitesmoke;
     border-radius: 2em;
     padding: 5vh 5vw;
@@ -32,8 +34,9 @@ h1, h2, h3, h4, p, ul, li{
     padding: 0;
 }
 .section-header{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2em;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 3em;
+    font-style: bold;
 }
 a{
     text-decoration: none;
@@ -41,7 +44,7 @@ a{
     font-weight: 500;
     white-space: nowrap;
 }
-a:hover{
+.nav-link:hover{
     color: #fe305f;
     text-decoration: underline;
     text-decoration-color: #fe305f;
@@ -51,7 +54,6 @@ a:hover{
     background-color: #0D142E;
     margin: 0;
     display: flex;
-    font-family: 'Quicksand', sans-serif;
     width: 100%;
     height: 10vh;
     text-decoration: none;
@@ -65,7 +67,7 @@ a:hover{
 .nav-header{
     display: flex;
     padding: 0px 3vw 0px 3vw;
-    font-size: xx-large;
+    font-size: 3.5em;
     flex-basis: 0;
 }
 .social-wrapper{
@@ -79,8 +81,8 @@ a:hover{
 }
 .nav-items{
     display: flex;
-    justify-content: flex-end;
-    font-size: large;
+    justify-content: center;
+    font-size: 2.2em;
     padding-right: 3vw;
 }
 .nav-items a{
@@ -88,9 +90,9 @@ a:hover{
     align-self: center;
 }
 .landing{
-    width: 70vw;
+    width: 65vw;
     height: 80vh;
-    margin: 5vh 15vw 6vh;
+    margin: 5vh 17.5vw 6vh;
     background-color: #0D142E;
     border-radius: 2em;
     padding: 5vh 5vw;
@@ -99,19 +101,56 @@ a:hover{
     flex-direction: column;
 }
 .landing-intro{
-
+    align-self: flex-start;
+    margin-top: 13vh;
+    font-size: 2.75em;
+    flex-grow: 2;
 }
 .landing-call{
-
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
 }
 .landing h1{
+    font-family: 'Source Code Pro', monospace;
     color: #fe305f;
-    font-size: 4em;
 }
+/* .landing-head,
+.landing-head{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.landing-head{
+    background: teal;
+    animation: 
+    typewriter 4s steps(27) forwards;
+} */
+
 .landing h2{
     color: white;
+    white-space: nowrap;
+    padding-right: 2rem;
 }
-
+#projects{
+    scroll-margin-top: 20vh;
+}
+#about{
+    scroll-margin-top: 20vh;
+}
+#contact{
+    scroll-margin-top: 20vh;
+}   
+/* @keyframes typewriter{
+    to{
+        left:100%;
+    }
+} */
 @media (max-width: 767px) {
 
 }
