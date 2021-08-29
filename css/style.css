@@ -1,13 +1,39 @@
 *{
     box-sizing: border-box;
     width: 100%;
-    background-color: #1c2c41;
     color: white;
 }
 body{
-    font-family: 'Besley', serif;
-    font-size: larger;
-    
+    background-image: url("/portfolioBg.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: large;
+    margin: 0;
+}
+.body-container{
+    width: 70vw;
+    height: 80vh;
+    margin: 5vh 15vw 6vh;
+    background-color: whitesmoke;
+    border-radius: 2em;
+    padding: 5vh 5vw;
+    box-shadow: 0 0 5px 0 #0D142E;
+}
+.footer{
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+}
+h1, h2, h3, h4, p, ul, li{
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+.section-header{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
 }
 a{
     text-decoration: none;
@@ -16,18 +42,25 @@ a{
     white-space: nowrap;
 }
 a:hover{
-    color: lightgray;
+    color: #fe305f;
+    text-decoration: underline;
+    text-decoration-color: #fe305f;
     font-style: bold;
 }
 .navbar{
+    background-color: #0D142E;
+    margin: 0;
     display: flex;
     font-family: 'Quicksand', sans-serif;
     width: 100%;
+    height: 10vh;
     text-decoration: none;
     padding: 15px;
     align-items: center;
     justify-content: flex-start;
     flex-flow: row nowrap;
+    position: sticky;
+    top: 0;
 }
 .nav-header{
     display: flex;
@@ -47,13 +80,37 @@ a:hover{
 .nav-items{
     display: flex;
     justify-content: flex-end;
-    font-size: x-large;
+    font-size: large;
     padding-right: 3vw;
 }
 .nav-items a{
     padding: 0px 10px;
+    align-self: center;
 }
+.landing{
+    width: 70vw;
+    height: 80vh;
+    margin: 5vh 15vw 6vh;
+    background-color: #0D142E;
+    border-radius: 2em;
+    padding: 5vh 5vw;
+    box-shadow: 0 0 2px 0 #fff;
+    display: flex;
+    flex-direction: column;
+}
+.landing-intro{
 
+}
+.landing-call{
+
+}
+.landing h1{
+    color: #fe305f;
+    font-size: 4em;
+}
+.landing h2{
+    color: white;
+}
 
 @media (max-width: 767px) {
 
