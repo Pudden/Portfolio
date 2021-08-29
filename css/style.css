@@ -117,20 +117,6 @@ a{
     font-family: 'Source Code Pro', monospace;
     color: #fe305f;
 }
-/* .landing-head,
-.landing-head{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-.landing-head{
-    background: teal;
-    animation: 
-    typewriter 4s steps(27) forwards;
-} */
 
 .landing h2{
     color: white;
@@ -146,11 +132,7 @@ a{
 #contact{
     scroll-margin-top: 20vh;
 }   
-/* @keyframes typewriter{
-    to{
-        left:100%;
-    }
-} */
+
 @media (max-width: 767px) {
 
 }
