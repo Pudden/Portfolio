@@ -12,15 +12,16 @@ body{
     background-position: center;
     background-attachment: fixed;
     font-size: 65%;
+    width: 100%;
     margin: 0;
 }
 .body-container{
     width: 65vw;
     height: fit-content;
-    margin: 5vh 17.5vw 6vh;
+    margin: 6vh 17.5vw 6vh;
     background-color: whitesmoke;
     border-radius: 2em;
-    padding: 5vh 5vw;
+    padding: 3vh 3vw;
     box-shadow: 0 0 5px 0 #0D142E;
 }
 .footer{
@@ -55,25 +56,21 @@ a{
     margin: 0;
     display: flex;
     width: 100%;
-    height: 10vh;
+    height: 8vh;
     text-decoration: none;
+    border-bottom: 1px solid #fff;
     padding: 15px;
     align-items: center;
     justify-content: flex-start;
     flex-flow: row nowrap;
     position: sticky;
     top: 0;
-}
-.nav-header{
-    display: flex;
-    padding: 0px 3vw 0px 3vw;
-    font-size: 3.5em;
-    flex-basis: 0;
+    z-index: 1000;
 }
 .social-wrapper{
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: 0px 3vw 0px 3vw;
     flex-basis: 0;
 }
 .icon{
@@ -81,9 +78,10 @@ a{
 }
 .nav-items{
     display: flex;
+    width: fit-content;
     justify-content: center;
     font-size: 2.2em;
-    padding-right: 3vw;
+    padding-right: 5vw;
 }
 .nav-items a{
     padding: 0px 10px;
@@ -92,11 +90,11 @@ a{
 .landing{
     width: 65vw;
     height: 80vh;
-    margin: 5vh 17.5vw 6vh;
+    margin: 6vh 17.5vw 6vh;
     background-color: #0D142E;
     border-radius: 2em;
     padding: 5vh 5vw;
-    box-shadow: 0 0 2px 0 #fff;
+    box-shadow: 0 0 5px 0 #fe305f;
     display: flex;
     flex-direction: column;
 }
@@ -124,14 +122,38 @@ a{
     padding-right: 2rem;
 }
 #projects{
-    scroll-margin-top: 20vh;
+    scroll-margin-top: 16vh;
 }
 #about{
-    scroll-margin-top: 20vh;
+    scroll-margin-top: 16vh;
 }
 #contact{
-    scroll-margin-top: 20vh;
+    scroll-margin-top: 16vh;
+}
+.proj-container{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.proj-img-container{
+
+}
+.proj-desc-container{
+
 }   
+.proj-desc-container h4{
+    font-size: 2em;
+    color: #0D142E;
+}
+.proj-desc-container h3{
+    font-size: 2.7em;
+    color: #fe305f;
+}
+.proj-desc-container p{
+    font-size: 1.6em;
+}
+.proj-desc-container li{
+    font-size: 1.6em;
+}
 
 @media (max-width: 767px) {
 
