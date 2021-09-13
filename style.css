@@ -18,7 +18,7 @@ body{
 .body-container{
     width: 65vw;
     height: fit-content;
-    margin: 6vh 17.5vw 6vh;
+    margin: 6vh 17.5vw;
     background-color: whitesmoke;
     border-radius: 2em;
     padding: 3vh 3vw;
@@ -133,6 +133,7 @@ a{
 .proj-container{
     display: flex;
     flex-flow: row nowrap;
+    padding: 3vh 3vw;
 }
 .proj-img-container{
 
@@ -152,6 +153,9 @@ a{
     font-size: 1.6em;
 }
 .proj-desc-container li{
+    font-size: 1.6em;
+}
+.aboutText{
     font-size: 1.6em;
 }
 
